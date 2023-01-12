@@ -1,6 +1,7 @@
 // Create a discord bot using Opatn API
 require('dotenv').config();
 const { token, apiorg, apikey } = require('./config.json');
+const keep_alive = require('./keep_alive.js')
 
 const { Client, Events, GatewayIntentBits } = require('discord.js')
 const { Configuration, OpenAIApi } = require('openai');
